@@ -1,0 +1,6 @@
+{
+  "require": {
+    "phpoffice/phpspreadsheet": "^1.5",
+    "simple-html-dom/simple-html-dom": "*"
+  }
+}

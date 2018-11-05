@@ -1,0 +1,23 @@
+body{
+    /*margin-top: 70px*/
+}
+.fixed-top{
+    z-index: 30;
+}
+main.container{
+    margin-top: 50px;
+}
+.mar-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.bordered-user-data {
+    border: 3px solid;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.zero-top-bottom-padding{
+    padding-top: 0;
+    padding-bottom: 0;
+}

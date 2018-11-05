@@ -1,0 +1,6 @@
+.mr-auto .nav-item{
+    padding: 0 50px;
+}
+.mr-auto .nav-item.active{
+    background-color: #000;
+}
