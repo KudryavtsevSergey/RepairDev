@@ -13,30 +13,25 @@
     <div class="row">
         <div class="form-group col-md-6 col-sm-6">
             <label for="vin_number"><?= GetMessage('VIN_NUMBER') ?></label>
-            <input id="vin_number" class="form-control" type="text" name="CAR_PARSING_CARD[UF_VIN_NUMBER]"
-                   placeholder="<?= GetMessage('VIN_NUMBER') ?>">
+            <input id="vin_number" class="form-control" type="text" name="CAR_PARSING_CARD[UF_VIN_NUMBER]">
         </div>
 
         <div class="form-group col-md-6 col-sm-6">
             <label for="lot_number"><?= GetMessage('LOT_NUMBER') ?></label>
-            <input id="lot_number" class="form-control" type="text" name="CAR_PARSING_CARD[UF_LOT_NUMBER]"
-                   placeholder="<?= GetMessage('LOT_NUMBER') ?>">
+            <input id="lot_number" class="form-control" type="text" name="CAR_PARSING_CARD[UF_LOT_NUMBER]">
         </div>
         <div class="form-group col-md-6 col-sm-6">
             <label for="year_of_issue"><?= GetMessage('YEAR_OF_ISSUE') ?></label>
-            <input id="year_of_issue" class="form-control" type="text" name="CAR_PARSING_CARD[UF_YEAR_OF_ISSUE]"
-                   placeholder="<?= GetMessage('YEAR_OF_ISSUE') ?>">
+            <input id="year_of_issue" class="form-control" type="text" name="CAR_PARSING_CARD[UF_YEAR_OF_ISSUE]">
         </div>
 
         <div class="form-group col-md-6 col-sm-6">
             <label for="make_and_model"><?= GetMessage('MAKE_AND_MODEL') ?></label>
-            <input id="make_and_model" class="form-control" type="text" name="CAR_PARSING_CARD[UF_MAKE_AND_MODEL]"
-                   placeholder="<?= GetMessage('MAKE_AND_MODEL') ?>">
+            <input id="make_and_model" class="form-control" type="text" name="CAR_PARSING_CARD[UF_MAKE_AND_MODEL]">
         </div>
         <div class="form-group col-md-6 col-sm-6">
             <label for="colour"><?= GetMessage('COLOUR') ?></label>
-            <input id="colour" class="form-control" type="text" name="CAR_PARSING_CARD[UF_COLOUR]"
-                   placeholder="<?= GetMessage('COLOUR') ?>">
+            <input id="colour" class="form-control" type="text" name="CAR_PARSING_CARD[UF_COLOUR]">
         </div>
 
     </div>
@@ -67,17 +62,14 @@
                     <?= $sparePart['PROPERTIES']['NAME' . LANG_POSTFIX]['VALUE']; ?>
                 </td>
                 <td>
-                    <input type="text" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_Z]"
-                           placeholder="<?= GetMessage('LABEL_Z') ?>">
+                    <input type="text" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_Z]">
                 </td>
                 <? if ($USER->IsAdmin()): ?>
                     <td>
-                        <input type="text" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_P]"
-                               placeholder="<?= GetMessage('LABEL_R') ?>">
+                        <input type="text" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_P]">
                     </td>
                     <td>
-                        <input type="text" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_KOMR]"
-                               placeholder="<?= GetMessage('LABEL_KOMR') ?>">
+                        <input type="text" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_KOMR]">
                     </td>
                 <? else: ?>
                     <td style="display: none">
@@ -89,8 +81,7 @@
                     <input type="checkbox" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_ADDITIONAL_PACKAG]">
                 </td>
                 <td>
-                    <input type="text" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_NOTE]"
-                           placeholder="<?= GetMessage('NOTE') ?>">
+                    <input type="text" name="SPARE_PARTS[<?= $sparePart['ID'] ?>][UF_NOTE]">
                 </td>
             </tr>
         <? endforeach; ?>

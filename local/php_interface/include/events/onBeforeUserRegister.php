@@ -30,6 +30,8 @@ function OnAfterUserRegisterHandler($arFields)
     ];
 
     createEmailEvent('USER_NOTIFY', $arUserEmailFields);
+
+    $_SESSION['USER_REGISTERED'] = 'Y';
 }
 
 function OnBeforeUserUpdateHandler($arFields)

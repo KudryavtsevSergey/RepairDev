@@ -1,3 +1,17 @@
+<?$APPLICATION->IncludeComponent(
+    "bitrix:main.register",
+    "",
+    Array(
+        "AUTH" => "N",
+        "REQUIRED_FIELDS" => array("EMAIL"),
+        "SET_TITLE" => "Y",
+        "SHOW_FIELDS" => array("EMAIL", "NAME", "PERSONAL_COUNTRY"),
+        "SUCCESS_PAGE" => "",
+        "USER_PROPERTY" => array(),
+        "USE_BACKURL" => "N"
+    )
+);?>
+
 <?
 /**
  * Bitrix Framework
@@ -13,7 +27,7 @@
  * @var array $arResult
  * @var CBitrixComponentTemplate $this
  */
-
+/*
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 //one css for all system.auth.* forms
@@ -182,3 +196,4 @@ if ($arParams["~AUTH_RESULT"]["TYPE"] == "OK") {
     }
     ?>
 </div>
+*/?>
